@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>A economia no curto prazo: entendendo o ciclo econômico e o hiato do produto</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Vítor Wilher Cientista-Chefe da Análise Macro " />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#282f6b"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/mark.js/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":true}) })</script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copiar","success":"Copiado!","error":"Pressione Ctrl+C para copiar"})</script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <link href="libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding/datatables.js"></script>
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <link href="libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core/js/jquery.dataTables.min.js"></script>
+    <link href="libs/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# A economia no curto prazo: entendendo o ciclo econômico e o hiato do produto
+]
+.subtitle[
+## Macroeconomia para Investimentos
+]
+.author[
+### Vítor Wilher<br><span style = "font-size: 70%;">Cientista-Chefe da Análise Macro<br>
+]
+
+---
+
+
+
+
+
+
+&lt;style type="text/css"&gt;
+pre {
+  white-space: pre-wrap;
+  overflow-y: scroll !important;
+  max-height: 45vh !important;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.tiny55 .remark-code {
+  font-size: 55%; !important;
+}
+&lt;/style&gt;
+
+
+
+### Temas de hoje
+
+- Entendendo o ciclo econômico e o hiato&lt;br&gt;&lt;br&gt;
+  - Introdução
+  - O que são ciclos econômicos?
+  - Ciclo econômico no Brasil
+  - O PIB e o ciclo econômico
+  - Produto potencial e hiato no Brasil&lt;br&gt;&lt;br&gt;
+- Modelos macroeconômicos&lt;br&gt;&lt;br&gt;
+  - Para que servem?
+  - Modelo básico do BCB
+    - Curva IS
+    - Curva de Phillips
+    - Regra de Taylor
+    - Como o modelo é estimado?
+    - Interpretando o modelo
+
+
+---
+class: middle, center, inverse
+# Entendendo o ciclo econômico e o hiato
+
+
+---
+### Introdução
+
+.middle[
+
+Nas aulas passadas vimos que os economistas estudam a macroeconomia para, sobretudo, suportar as decisões de política econômica com vistas ao atingimento de metas — como, por exemplo, o crescimento econômico. Também entendemos como a atividade econômica de um país é mensurada, explorando as Contas Nacionais e o PIB. Dessa forma, podem surgir algumas **questões importantes ao analisar os dados da economia**, como:
+
+
+- Como saber o "estado atual da economia"? 
+- Como saber o quão distante, ou próximo, a economia está do seu potencial de crescimento?
+
+Essas questões são de interesse de indivíduos, empresários, investidores e governos, dado que podem impactar diretamente o seu dia a dia e planejamento. Para endereça-las precisamos antes compreender um **fato estilizado** que é chamado de "ciclo econômico".
+
+]
+
+
+---
+### O que são ciclos econômicos?
+
+.pull-left[
+
+"**Ciclos econômicos** [ou ciclos de negócios] são um tipo de flutuação encontrada na atividade econômica agregada de nações que organizem seu trabalho principalmente em empresas privadas: um ciclo consiste de expansão ocorrendo simultaneamente em muitas atividades econômicas, seguidas de fases similares de recessões, contrações e recuperações, as quais se consolidam em uma fase de expansão do próximo ciclo. Essa sequência de mudanças é recorrente, mas não periódica [...]" - Burns e Mitchell (1946).
+
+]
+
+.pull-right[
+
+&lt;img src="index_files/figure-html/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+De forma [análoga às condições meteorológicas](https://www.forbes.com/sites/cognitiveworld/2019/10/02/preparing-for-the-next-recession/) — com alguns períodos de calor e céu azul e outros de frio e chuva —, a ideia é que **a atividade econômica se move** de um pico para um vale ("recessão", luz vermelha) e depois do vale para o pico ("recuperação", luz verde), **em torno de um equilíbrio desconhecido ou produto potencial**. Essas flutuações são irregulares e não estritamente cíclicas.
+
+
+---
+### Ciclo econômico no Brasil
+
+Dessa definição, identificar o momento atual do ciclo econômico se tornou uma atividade fundamental para economistas, contribuindo para "dar maior eficiência às políticas econômicas governamentais e à alocação de recursos no âmbito privado", conforme o **[CODACE/FGV](https://portalibre.fgv.br/codace)**. 
+
+.pull-left[
+
+No Brasil este comitê independente é responsável por determinar e datar os ciclos econômicos, seguindo o modelo adotado em outros países, como pelo [NBER](https://www.nber.org/research/business-cycle-dating) nos Estados Unidos.
+
+Ao lado expomos as últimas datações do ciclo econômico brasileiro definidas pelo CODACE. Nas próximas seções deste curso aprenderemos mais sobre esse procedimento, explorando uma metodologia aplicada aos dados brasileiros para datar o ciclo econômico.
+
+]
+
+.pull-right[
+
+&lt;img src="./imgs/codace.PNG"/&gt;
+
+.center[Fonte: [FGV](https://portalibre.fgv.br/sites/default/files/2020-06/comunicado-do-comite-de-datacao-de-ciclos-economicos-29_06_2020-1.pdf)]
+
+]
+
+
+---
+### O PIB e o ciclo econômico
+
+Como vimos anteriormente, o PIB é uma medida da atividade econômica e, conforme os fatos estilizados dos ciclos econômicos, oscila em torno de um equilíbrio desconhecido, comumente chamado de produto potencial pelos economistas. Para entender melhor essa relação podemos **decompor o PIB em duas partes**, como em Licha (2015):
+
+`$$Y_t = Y_{t}^p + h_t$$`
+
+onde:
+
+- `\(Y_t\)` é o **PIB**;
+- `\(Y_{t}^p\)` é o chamado **produto potencial**, representa a tendência de longo prazo do PIB, ou seja, reflete condições estruturais da economia como a população em idade ativa, o estoque de capital, qualidade de educação, qualidade das instituições, etc;
+- `\(h_t\)`  é o chamado **hiato do produto**, representa o componente cíclico, ou seja, reflete condições conjunturais da economia, como choques de demanda/oferta, incentivos de política econômica, condições climáticas, choques externos, incertezas políticas, etc.
+
+O produto potencial não é uma variável observável, havendo a necessidade de estimá-la.
+
+
+---
+### Produto potencial e hiato no Brasil
+
+Em outras palavras, **no curto prazo o PIB pode crescer mais ou menos do que o PIB potencial**, sendo a diferença entre `\(Y_t\)` e `\(Y_{t}^p\)` dada pelo hiato do produto ou ciclo econômico. A dinâmica desse ciclo é determinada em grande medida pela rigidez de preços da economia. Fossem os preços totalmente flexíveis, o ajuste seria imediato, implicando que a diferença (hiato) fosse sempre igual a zero (a economia estaria sempre em equilíbrio). Porém, na prática, isso não acontece, como pode ser observado abaixo:
+
+&lt;img src="index_files/figure-html/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+class: middle, center, inverse
+# Modelos macroeconômicos
+
+
+---
+### Para que servem?
+
+De forma a entender melhor o ciclo econômico, assim como o grau de abertura do hiato do produto, surgiram diversos modelos macroeconômicos nas últimas décadas — após o que ficou conhecido como novo consenso macroeconômico ou síntese novo-keynesiana. **Estes modelos sintetizam relações básicas entre variáveis econômicas**, permitindo prever o comportamento da economia e ajustar a política econômica de modo a evitar grandes desvios em relação às metas. 
+
+Em suma, os modelos macroeconômicos:
+
+- Servem como **ferramenta analítica** para os formuladores de políticas econômicas (BCB, ME, etc.);
+- São usados para analisar os **efeitos de choques** na economia;
+- Permitem **projetar trajetórias** futuras conforme diferentes cenários;
+- Possibilitam **estimar variáveis não observáveis** importantes (hiato do produto, taxa de juros neutra, etc.);
+- Variam em abordagens e são constantemente revisados.
+
+No Brasil, a autoridade monetária (BCB), após a adoção do [Regime de Metas para Inflação](https://www.bcb.gov.br/controleinflacao/metainflacao) em 1999, vem constantemente utilizando e apresentando modelos macroeconômicos com diferentes abordagens. A seguir, exploramos de forma breve o **modelo básico do BCB**, descrito em Bogdanski et al. (2000).
+
+
+---
+### Modelo básico do BCB
+
+O modelo macroeconômico básico do BCB é descrito em Bogdanski et al. (2000) e é composto por três&lt;sup&gt;1&lt;/sup&gt; equações:
+
+- **Curva IS** (do inglês *Investments and Savings*): representa o lado da demanda agregada;
+- **Curva de Phillips**: representa o lado da oferta agregada;
+- **Regra de Taylor**: representa as decisões de política monetária.
+
+A **representação** em [forma reduzida](https://en.wikipedia.org/wiki/Reduced_form), de frequência trimestral, e os termos de cada equação são detalhados abaixo. Para versões mais atualizadas do modelo veja [Relatório de Inflação](https://www.bcb.gov.br/publicacoes/ri) do BCB.
+
+O modelo é comumente chamado de **modelo (agregado) de pequeno porte** (MPP) ou modelo de pequena escala ou ainda modelo semiestrutural. Essa categoria de modelos é caracterizada por possuir "poucas equações e com restrições diretamente inspiradas na teoria econômica e em fatos consensuais, mas que não buscam identificar toda a estrutura da economia", conforme Lima et al. (2011).
+
+
+.footnote[
+
+&lt;sup&gt;1&lt;/sup&gt; Em verdade são quatro equações, mas aqui simplificamos omitindo a equação da paridade descoberta da taxa de juros, que representa o contato com o setor externo.
+
+]
+
+
+---
+### Curva IS
+
+- **O que é?**
+
+É uma **curva de demanda agregada da economia**, descrevendo o equilíbrio no mercado de bens e serviços. Expressa o hiato do produto em função de suas próprias defasagens, da taxa real de juros e do resultado primário.
+
+- **Equação**:
+
+`$$h_t = \beta_0 + \beta_1 h_{t-1} + \beta_2 h_{t-2} + \beta_{3} r_{t-1} + \beta_4 pr_{t-1} + \varepsilon_t$$`
+
+- **Termos**:
+
+`\(h_t\)` &amp;rarr; é o log do hiato do produto;&lt;br&gt;
+`\(r_t\)` &amp;rarr; é o log da taxa real de juros (log(1 + R), *ex ante* ou *ex post*);&lt;br&gt;
+`\(pr_t\)` &amp;rarr; é o log das necessidades de financiamento do setor público (NFSP, % PIB, log(1 + PR)), conceito primário;&lt;br&gt;
+`\(\varepsilon_t\)` &amp;rarr; é um choque de demanda.
+
+A série histórica do hiato do produto deve ser construída (costuma-se primeiro construir o produto potencial usando tendência linear, filtro HP, filtro de Kalman, função de produção, etc.).
+
+
+---
+### Curva de Phillips
+
+- **O que é?**
+
+É uma **curva de oferta agregada da economia**, descrevendo a relação entre a inflação e uma medida de aquecimento da economia (hiato do produto). Expressa a taxa de inflação em função de suas próprias defasagens e/ou expectativas futuras, do hiato do produto, de uma medida de inflação externa mais a taxa de câmbio.
+
+
+.panelset[
+
+.panel[.panel-name[Equação]
+
+$$
+\scriptsize
+`\begin{align*}
+  \textbf{Especificação backward-looking: } &amp; \pi_t = \alpha_1^b \pi_{t-1} + \alpha_2^b \pi_{t-2} + \alpha_3^b h_{t-1} + \alpha_4^b \Delta(\pi_t^* + e_t) + \varepsilon_t^b \\
+  \textbf{Especificação forward-looking: } &amp; \pi_t = \alpha_1^f \pi_{t-1} + \alpha_2^f E_t(\pi_{t+1}) + \alpha_3^f h_{t-1} + \alpha_4^f \Delta(\pi_t^* + e_t) + \varepsilon_t^f \\
+  \textbf{Especificação combinada (média): } &amp; \pi_t = \frac{(\alpha_1^b + \alpha_1^f)}{2} \pi_{t-1} + \frac{\alpha_2^f}{2} E_t(\pi_{t+1}) + \frac{\alpha_2^b}{2} \pi_{t-2} + \frac{(\alpha_3^b + \alpha_3^f)}{2} h_{t-1} + \frac{(\alpha_4^b + \alpha_4^f)}{2} \Delta(\pi_t^* + e_t) + \varepsilon_t^n
+\end{align*}`
+$$
+
+Os parâmetros `\(\alpha\)` no lado direito das equações, exceto para o do hiato do produto, são estimados impondo-se a [restrição de verticalidade da curva de Phillips no longo prazo](https://en.wikipedia.org/wiki/Phillips_curve#NAIRU_and_rational_expectations), ou seja, `\(\sum_{i=1}^m \alpha_i^j = 1\)`, sendo `\(j\)` a especificação da equação em questão.
+
+]
+
+.panel[.panel-name[Termos]
+
+`\(\pi_t\)` &amp;rarr; é o log da inflação (log(1 + `\(\pi\)`));&lt;br&gt;
+`\(\pi_t^*\)` &amp;rarr; é o log de uma medida de inflação externa (log(1 + `\(\pi^*\)`));&lt;br&gt;
+`\(e_t\)` &amp;rarr; é o log da taxa de câmbio nominal;&lt;br&gt;
+`\(\Delta\)` &amp;rarr; é o [operador de primeira diferença](https://en.wikipedia.org/wiki/Lag_operator#Difference_operator);&lt;br&gt;
+`\(E_t(\cdot)\)` &amp;rarr; é o operador de expectativa, condicional à informação disponível no tempo `\(t\)`;&lt;br&gt;
+`\(\varepsilon_t^b, \varepsilon_t^f, \varepsilon_t^n\)` &amp;rarr; são choques de oferta.
+
+]
+
+]
+
+
+
+---
+### Regra de Taylor
+
+- **O que é?**
+
+É uma **regra de taxa de juros**, descrevendo as decisões de política monetária. Expressa a taxa básica de juros como uma combinação linear de suas próprias defasagens, do desvio da inflação em relação a sua meta e do hiato do produto. 
+
+- **Equação**:
+
+`$$i_t = (1 - \lambda) i_{t-1} + \lambda(\alpha_1 (\pi_t - \pi_t^m) + \alpha_2 h_t + \alpha_3)$$`
+
+- **Termos**:
+
+`\(i_t\)` &amp;rarr; é o log da taxa de juros;&lt;br&gt;
+`\(\lambda\)` &amp;rarr; é uma constante de suavização;&lt;br&gt;
+`\(\pi_t^m\)` &amp;rarr; é o log da meta para a taxa de inflação.
+
+Quando `\(\lambda = 1\)`, a equação é equivalente a regra de Taylor padrão, e quando `\(\lambda \in (0,1)\)` a equação é uma regra de Taylor com suavização da taxa de juros. Os parâmetros `\(\alpha\)` podem ser definidos arbitrariamente ou utilizando procedimentos de otimização.
+
+
+---
+### Variáveis do modelo
+
+&lt;style type="text/css"&gt;
+table.dataTable tbody th, table.dataTable tbody td {
+  padding: 0px 0px;
+}
+&lt;/style&gt;
+
+
+<div id="htmlwidget-f17fe7d98a890f8120d5" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f17fe7d98a890f8120d5">{"x":{"filter":"none","vertical":false,"data":[["$$\\normalsize h_t$$","$$\\normalsize r_t$$","$$\\normalsize pr_t$$","$$\\normalsize \\pi_t$$","$$\\normalsize \\pi_t^*$$","$$\\normalsize e_t$$","$$\\normalsize E_t(\\pi_t)$$","$$\\normalsize i_t$$","$$\\normalsize \\pi_t^m$$"],["Hiato do produto","Taxa real de juros","Necessidades de financiamento do setor público","Taxa de inflação","Taxa de inflação externa","Taxa de câmbio nominal","Expectativas de inflação","Taxa de juros","Meta para a taxa de inflação"],["","x","x","","x","x","x","","x"],["x","","","x","","","","x",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Termo<\/th>\n      <th>Variável<\/th>\n      <th>Exógena<\/th>\n      <th>Endógena<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[-1]; $(row).css({'font-size':'80%'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'text-align':'center'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'text-align':'center'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+
+
+---
+### Como o modelo é estimado?
+
+O modelo é composto por um sistema de 3 equações, sendo que a Regra de Taylor pode ser considerada, arbitrariamente, como uma [identidade](https://en.wikipedia.org/wiki/Accounting_identity). Dessa forma, o **modelo é caracterizado como de [equações simultâneas](https://en.wikipedia.org/wiki/Simultaneous_equations_model)**, dado que, por exemplo, o hiato do produto é definido pela Curva IS e é uma variável explicativa na Curva de Phillips, que por sua vez explica a inflação, sendo esta uma variável da Regra de Taylor. Sendo assim, não se pode obter a taxa de juros pela Regra de Taylor sem que a inflação pela Curva de Phillips tenha sido estimada, e não se pode estimar a inflação sem que o hiato tenha sido estimado pela Curva IS. Ou seja, dizemos que as variáveis são determinadas "simultaneamente" pelo modelo.
+
+A **solução** para esse tipo de modelo é, geralmente, o uso de um método (algoritmo iterativo) como o de [Gauss–Seidel](https://en.wikipedia.org/wiki/Gauss%E2%80%93Seidel_method), variações dele ou semelhantes. Em resumo, o método segue estes **procedimentos**:
+
+1. Suponha um conjunto de valores para as variáveis endógenas;
+2. Usando este conjunto de valores para as variáveis do lado direito, resolva todas as equações para as variáveis do lado esquerdo;
+3. O passo 2 produz um novo conjunto de valores das variáveis endógenas. Substitua o conjunto inicial por este novo conjunto e resolva as variáveis do lado esquerdo novamente;
+4. Continue substituindo o conjunto anterior de valores pelo novo conjunto até que as diferenças entre o novo conjunto e o conjunto anterior estejam dentro do grau de acurácia definido. Quando a acurácia necessária é alcançada, a "convergência" é alcançada e o modelo é resolvido. Os valores do lado direito são consistentes com os valores calculados do lado esquerdo.
+
+
+---
+### Como o modelo é estimado?
+
+De maneira prática, o modelo pode ser estimado por métodos econométricos como:
+
+- [Two-Stage Least Squares (2SLS)](https://en.wikipedia.org/wiki/Instrumental_variables_estimation) usando instrumentos;
+- [Generalized Method of Moments (GMM)](https://en.wikipedia.org/wiki/Generalized_method_of_moments).
+
+Ou por técnicas bayesianas, ver Herbst e Schorfheide (2015). Para detalhes sobre o método mais comumente utilizado (2SLS) comece pelo capítulo 16 de Wooldridge (2015).
+
+
+---
+### Interpretando o modelo
+
+Dado este modelo básico, suponha que o Banco Central aumente a taxa básica de juros. Qual o efeito dessa redução sobre a economia?
+
+Um aumento da taxa de juros nominal implica em **taxas reais de juros mais elevadas**, que por sua vez, pode levar à **diminuição de investimentos** pelas empresas e à **diminuição de consumo** por parte das famílias – o que, por sua vez, tende a **reduzir a demanda por bens e serviços** da economia, contribuindo para a **redução da inflação**. Em resumo, neste caso a autoridade monetária está buscando conter o aquecimento da economia pelo lado da demanda agrega, ou seja, tentando atenuar um hiato do produto positivo. Isso é feito pelos chamados **[canais de transmissão da política monetária](https://www.bcb.gov.br/controleinflacao/transmissaopoliticamonetaria)**, nesse caso o canal da **Curva IS**.
+
+Outro canal importante de transmissão da política monetária é o da **taxa de câmbio**. Quando a taxa de juros sobe, a **moeda doméstica tende a se valorizar**, barateando bens comercializáveis internacionalmente. A **taxa de câmbio afeta a inflação** por meio da diminuição dos preços produtos importados, desincentivando a exportação e estimulando a importação, dessa forma reduzindo a pressão sobre o nível de preços. Note que no modelo exposto este contato com o exterior não está incluso.
+
+Há também, dentre outros, o **canal do crédito**: ao aumentar a taxa de juros, o BC estimula que as taxas cobradas por empréstimos bancários também subam, diminuindo o volume de empréstimos a pessoas e empresas, desestimulando o consumo e o investimento.
+
+O BCB estima que o efeito de mudanças na Selic sobre a inflação demora, em média, de 6 a 9 meses se concretizar.
+
+
+---
+### Referências
+
+Bogdanski, J., Tombini, A. A., &amp; Werlang, S. R. D. C. (2000). *Implementing inflation targeting in Brazil*. Werlang, Sergio R., Implementing Inflation Targeting in Brazil (July 2000). Banco Central do Brasil Working Paper, (1).
+
+Burns, Arthur F. &amp; Mitchell, Wesley C., (1946). *Measuring Business Cycles*. National Bureau of Economic Research, Inc, https://EconPapers.repec.org/RePEc:nbr:nberbk:burn46-1.
+
+Herbst, E. P., &amp; Schorfheide, F. (2015). *Bayesian estimation of DSGE models*. In Bayesian Estimation of DSGE Models. Princeton University Press.
+
+Licha, A. L. (2015). *Teoria da Política Monetária: Uma abordagem a nível intermediário*. Rio de Janeiro, RJ: Alta Books.
+
+Lima, E., Araujo, F., &amp; Costa e Silva, J. (2011). *Previsão de modelos macroeconômicos no Banco Central do Brasil*. Dez anos de metas para a inflação no Brasil, 1999-2009, 352-400.
+
+Wooldridge, J. M. (2015). *Introductory econometrics: A modern approach*. Cengage learning.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"navigation": {
+"scroll": false
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
